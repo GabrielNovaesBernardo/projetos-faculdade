@@ -1,0 +1,57 @@
+*{
+    background-color: black;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 45px;
+    display:flex ;
+    justify-content: center;
+}
+.corpo{
+    animation: flutuar 2s linear infinite;
+    animation-direction: alternate;
+    position: relative;
+    justify-content: center;
+    width: 150px;
+    height: 300px;
+    border: solid blueviolet;
+    border-radius: 25ex 25ex 0 0;
+    background-color: blueviolet;
+}.ondas{
+    display:flex ;
+    flex-direction: row;
+    gap: 25px;
+}
+.onda2{
+    position: absolute;
+    bottom:30px;
+    border-radius:25ex 25ex 10ex 10ex ;
+    width: 40px;
+    height: 200px;
+    left: 80px;
+    border: solid blueviolet;
+    background-image: linear-gradient(to right, rgb(109, 17, 196) ,rgb(190, 108, 211), rgb(116, 90, 187));
+}
+.onda1{
+    position: absolute;
+    bottom:30px;
+    border-radius:25ex 25ex 10ex 10ex ;
+    width: 40px;
+    height: 200px;
+    left: 20px;
+    border: solid blueviolet;
+    background-image: linear-gradient(to right, rgb(109, 17, 196) ,rgb(190, 108, 211), rgb(116, 90, 187));
+}
+.palito{
+    position: absolute;
+    bottom: -83px;
+    left: 35%;
+    background-color: rgb(131, 82, 53);
+    width: 40px;
+    height: 80px;
+    border: solid rgb(131, 82, 53);
+    border-radius: 0 0 10ex 10ex;
+}
+@keyframes flutuar {to {transform:translateY(10px) ;}}

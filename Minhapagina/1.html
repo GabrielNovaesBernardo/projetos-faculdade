@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cantada 01</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <code>
+        <br><br>
+        import tkinter as tk <br>
+from tkinter import messagebox <br><br>
+
+messagebox.showinfo("Atenção !", "Atenção você acaba de ser rackeada, essa janela só irá fechar se você escolher a opção certa!") <br><br>
+
+def ask_morena(): <br><br><br>
+    
+        
+    answer = messagebox.askyesno("Pergunta", "morena, quer ficar comigo?") <br>
+    if answer: <br>
+        messagebox.showinfo("Resposta", "otimo, aonde voce quer ir ?") <br>
+        root.quit() <br>
+    else: <br>
+        ask_morena() <br><br><br>
+    
+
+root = tk.Tk() <br>
+root.withdraw() <br>
+ask_morena() <br>
+root.mainloop() <br>
+    </code>
+    <div class="interface">
+        <img src="imagens/cantada/tela1.png" alt="tela 1">
+        <img src="imagens/cantada/tela2.png" alt="tela2">
+        <img src="imagens/cantada/tela3.png" alt="tela3">  
+    </div>
+</body>
+</html>
